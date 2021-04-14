@@ -14,7 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
@@ -405,29 +405,29 @@
 
             <div class="fotter__join">
                 <p class="join__title">Присоединяйтесь</p>
-                <ul class="social-list list social-list__footer">
-                    <li class="social-list__item social-list__item__footer">
+                <ul class="social-list list">
+                    <li class="social-list__item social-list__item--footer">
                         <a href="" class="social-list__link link social-list__link--footer">
                             <svg class="social-list__icon social-list__icon--footer">
                                 <use href="./images/icons.svg#icon-instagram2"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="social-list__item social-list__item__footer">
+                    <li class="social-list__item social-list__item--footer">
                         <a href="" class="social-list__link link social-list__link--footer">
                             <svg class="social-list__icon social-list__icon--footer">
                                 <use href="./images/icons.svg#icon-twitter1"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="social-list__item social-list__item__footer">
+                    <li class="social-list__item social-list__item--footer">
                         <a href="" class="social-list__link link social-list__link--footer">
                             <svg class="social-list__icon social-list__icon--footer">
                                 <use href="./images/icons.svg#icon-facebook1"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="social-list__item social-list__item__footer">
+                    <li class="social-list__item social-list__item--footer">
                         <a href="" class="social-list__link link social-list__link--footer">
                             <svg class="social-list__icon social-list__icon--footer">
                                 <use href="./images/icons.svg#icon-linkedin1"></use>
@@ -463,44 +463,45 @@
 
             <form action="#" class="modal-form">
 
-                <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
+                <b class="modal-form__title">Оставьте свои данные, мы вам перезвоним</b>
 
-                <ladel for="user-name" class="modal-form-fild">Имя</ladel>
-                <div class="modal-form-input-wrapper">
-                    <input type="text" name="user-name" id="user-name" class="modal-form-input" required minlength="2">
-                    <svg class="modal-form-icon">
+                <ladel class="modal-form__fild" for="user-name">Имя</ladel>
+                <div class="modal-form__input-wrapper">
+                    <input class=" modal-form__input" type="text" name="user-name" id="user-name" required
+                        minlength="2">
+                    <svg class="modal-form__icon">
                         <use href="./images/icons.svg#modal-person"></use>
                     </svg>
                 </div>
 
-                <label for="user-tel" class="modal-form-fild">
+                <label class="modal-form__fild" for="user-tel">
                     Телефон</label>
-                <div class="modal-form-input-wrapper">
-                    <input type="tel" name="user-email" id="user-tel" class="modal-form-input" required
+                <div class="modal-form__input-wrapper">
+                    <input class="modal-form__input" type="tel" name="user-email" id="user-tel" required
                         pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="0**-111-11-11">
-                    <svg class="modal-form-icon">
+                    <svg class="modal-form__icon">
                         <use href="./images/icons.svg#modal-phone"></use>
                     </svg>
                 </div>
 
-                <label for="user-email" class="modal-form-fild">
+                <label class="modal-form__fild" for="user-email">
                     Почта</label>
-                <div class="modal-form-input-wrapper">
-                    <input type="email" name="user-tel" id="user-email" class="modal-form-input">
-                    <svg class="modal-form-icon">
+                <div class="modal-form__input-wrapper">
+                    <input class="modal-form__input" type="email" name="user-tel" id="user-email">
+                    <svg class="modal-form__icon">
                         <use href="./images/icons.svg#modal-email"></use>
                     </svg>
                 </div>
 
-                <label class="modal-form-fild">
+                <label class="modal-form__fild">
                     Комментарий</label>
-                <textarea name="user-comment" id="user-comment" class="modal-form-comment"
+                <textarea class="modal-form__comment" name="user-comment" id="user-comment"
                     placeholder="Введите текст"></textarea>
 
                 <div class="checkbox">
-                    <input id="user-form" type="checkbox" name="user-tern" class="modal-form-tern visually-hidden">
-                    <label for="user-form" class="modal-form-check-desc">Соглашаюсь с рассылкой и принимаю&nbsp;
-                        <a href="#" class="modal-form-link">Условия договора</a>
+                    <input class="modal-form__tern visually-hidden" id="user-form" type="checkbox" name="user-tern">
+                    <label for="user-form" class="modal-form__check-desc">Соглашаюсь с рассылкой и принимаю&nbsp;
+                        <a href="#" class="modal-form__link">Условия договора</a>
                     </label>
                 </div>
                 <button type="submit" class="btn btn__modal-form">Отправить</button>
