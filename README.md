@@ -1,3 +1,5 @@
-# goit-markup-hw-03
-#homework_3
-flex
+# goit-markup-hw-07
+#homework_7
+sass/scss
+bem
+mixin
